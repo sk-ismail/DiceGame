@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Dice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+            <h1>Dice game</h1>
+         <h2 class="change">Let's Play</h2>
+
+       
+        
+        <script>
+            var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
+            var randomNumber2 = Math.floor(Math.random() * 6) + 1; //1-6
+
+        if (randomNumber1 > randomNumber2) {
+  document.querySelector("h2").innerHTML = "🚩 Play 1 Wins!";
+}
+else if (randomNumber2 > randomNumber1) {
+  document.querySelector("h2").innerHTML = "Player 2 Wins! 🚩";
+}
+else {
+  document.querySelector("h2").innerHTML = "Draw!";
+}
+        </script>
+    </body>
+</html>
